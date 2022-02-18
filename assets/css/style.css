@@ -1,0 +1,236 @@
+/*=== abstracts css start === */
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800&display=swap");
+/*===// end of abstracts css === */
+/*=== base css start === */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+::after, ::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, ol, ul, p, address, strong, i {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Mulish', sans-serif;
+  color: #aeaeae;
+}
+
+.container {
+  max-width: 820px;
+}
+
+/*===// end of base css === */
+/*=== components css start === */
+.btn-blue {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700;
+  background: -webkit-gradient(linear, right top, left top, from(#2972fe), to(#6499ff));
+  background: linear-gradient(270deg, #2972fe, #6499ff);
+  padding: 1rem;
+  border-color: transparent !important;
+  border-radius: 8px;
+}
+
+.btn-blue:hover {
+  color: #fff;
+  background: -webkit-gradient(linear, right top, left top, from(#1061fe), to(#4b88ff));
+  background: linear-gradient(270deg, #1061fe, #4b88ff);
+}
+
+.form-floating .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: #3178ff;
+}
+
+.form-floating .form-control {
+  font-size: 16px;
+  color: #000;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.app-opening {
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.app-opening h1 {
+  font-size: 38px;
+  color: #272643;
+  font-weight: 700;
+  padding: 20px 0 10px 0;
+}
+
+.app-opening p {
+  font-size: 18px;
+  color: #aeaeae;
+  font-weight: 400;
+}
+
+.introduction .skip-btn {
+  font-size: 14px;
+  color: #272643;
+  font-weight: 700;
+  padding: 2rem 1rem;
+}
+
+.introduction .skip-btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.introduction .introduction-slide .slick-dots {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding-left: 0;
+}
+
+.introduction .introduction-slide .slick-dots li {
+  display: inline-block;
+  padding: 5px;
+}
+
+.introduction .introduction-slide .slick-dots li button {
+  font-size: 0;
+  width: 9px;
+  height: 9px;
+  background-color: #aeaeae;
+  border-radius: 50%;
+  border: none;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.introduction .introduction-slide .slick-dots li.slick-active button {
+  width: 16px;
+  height: 16px;
+  background: linear-gradient(135deg, #2972fe, #6499ff);
+}
+
+.introduction .introduction-slide .next-arrow-box {
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 1;
+}
+
+.introduction .introduction-slide .next-arrow-box .slick-next {
+  width: 65px;
+  height: 65px;
+  border: 2px solid #aeaeae;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 20px;
+  background: transparent;
+  border-color: #2972fe #aeaeae #aeaeae #aeaeae;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.introduction .introduction-slide .next-arrow-box .slick-next.circle-50 {
+  border-color: #2972fe #2972fe #aeaeae #aeaeae;
+}
+
+.introduction .introduction-slide .next-arrow-box .slick-next.circle-75 {
+  border-color: #2972fe #2972fe #2972fe #aeaeae;
+}
+
+.introduction .introduction-slide .next-arrow-box .slick-next.circle-100 {
+  border-color: #2972fe;
+}
+
+.introduction .introduction-slide .next-arrow-box .slick-next i {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  text-align: center;
+  background: linear-gradient(135deg, #2972fe, #6499ff);
+  display: block;
+  line-height: 50px;
+  color: #fff;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.introduction .introduction-slide .introduction-item .introduction-item-inner {
+  min-height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6vh 0;
+}
+
+.introduction .introduction-slide .introduction-item .introduction-item-inner h2 {
+  font-size: 20px;
+  color: #272643;
+  font-weight: 700;
+  margin: 15px 0 12px 0;
+}
+
+.introduction .introduction-slide .introduction-item .introduction-item-inner p {
+  font-size: 16px;
+  color: #aeaeae;
+  font-weight: 400;
+}
+
+/*===// end of components css === */
+/*=== layouts css start === */
+/*===// end of layouts css === */
+/*=== pages start === */
+.login .login-header {
+  font-size: 18px;
+  color: #272643;
+  font-weight: 700;
+  padding: 40px 15px 20px 15px;
+}
+
+.login .login-content {
+  padding: 20px 15px;
+  background: #f2f8fd;
+  min-height: 100vh;
+}
+
+.login .login-content .btn-blue {
+  margin: 30px 0;
+}
+
+/*===// end of pages  === */
+/*# sourceMappingURL=style.css.map */
