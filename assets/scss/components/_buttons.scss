@@ -4,7 +4,7 @@
     @include font-style(16px, $color-white, 700);
     background: linear-gradient(270deg, $color-blue, $color-blue-light);
     padding: 1rem;
-    border-color: transparent !important;
+    border: none;
     border-radius: 8px;
 
     &:hover {

@@ -1,0 +1,16 @@
+@import "../abstracts/mixins";
+
+.navbar {
+    padding-top: 40px;
+
+    .nav-title {
+        @include font-style(18px, $color-white, 700);
+    }
+    .search-link {
+       font-size: 20px;
+       color: $color-white;
+    }
+    .btn:focus {
+        box-shadow: none;
+    }
+}
