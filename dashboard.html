@@ -13,7 +13,7 @@
 <body>
 
   <!-- === header section start === -->
-  <section class="header">
+  <header class="header">
     <div class="container px-0">
       <nav class="navbar bg-blue-gradient">
         <button class="btn sideNav-toggle-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
@@ -35,7 +35,7 @@
         </a>
       </nav>
     </div>
-  </section>
+  </header>
   <!-- ===//end of header section === -->
 
 
@@ -43,9 +43,9 @@
   <!-- === side-name section start === -->
   <div class="offcanvas offcanvas-start position-absolute side-nave" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
     <div class="offcanvas-header">
-      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><i class="far fa-times"></i></button>
     </div>
-    <div class="offcanvas-body">
+    <div class="offcanvas-body p-0">
       <div class="profile d-flex align-items-center justify-content-between">
         <div class="d-flex align-items-center">
           <div class="user-avatar"><img src="assets/images/user-avatar.png" alt="uaer avatar" class="img-fluid"></div>
@@ -58,18 +58,18 @@
           <i class="far fa-angle-right"></i>
         </a>
       </div>
-      <nav class="main-nav position-relative">
+      <nav class="main-nav position-relative mt-5">
         <ul class="ps-0 nav-list">
           <li><a href="#"><i class="far fa-border-all"></i> Dashboard</a></li>
           <li><a href="#"><i class="far fa-edit"></i> Register a Fault</a></li>
-          <li><a href="#"><i class="far fa-user-plus"></i> Administration</a></li>
+          <li class="mb-4"><a href="#"><i class="far fa-user-plus"></i> Administration</a></li>
           <li><a href="#"><i class="far fa-book-open"></i> Terms & Conditions</a></li>
           <li><a href="#"><i class="far fa-file-alt"></i> Privacy Policy</a></li>
-          <li><a href="#"><i class="far fa-badge-check"></i> About Us</a></li>
+          <li class="mb-4"><a href="#"><i class="far fa-badge-check"></i> About Us</a></li>
           <li><a href="#"><i class="far fa-cog"></i> Settings</a></li>
           <li><a href="#"><i class="far fa-sign-in"></i> Logout</a></li>
         </ul>
-        <img src="assets/images/side-nave.png" alt="side-nave" class="img-fluid position-absolute top-0 end-0">
+        <img src="assets/images/side-nave.png" alt="side-nave" class="img-fluid position-absolute top-0 end-0 side-image">
       </nav>
       <p class="nav-footer">Version 1.2</p>
     </div>
