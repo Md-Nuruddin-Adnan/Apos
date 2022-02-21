@@ -32,9 +32,7 @@
 
     // search-by-id 
     .search-by-id{
-        padding-left: 1rem;
-        padding-right: 1rem;
-        padding-bottom: 1rem;
+        padding: 0 1rem 1rem 1rem;
         background: $color-white;
 
         .form-floating{
@@ -44,6 +42,40 @@
                 &:focus {
                     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
                     background: $color-white;
+                }
+            }
+        }
+    }
+
+    // search by typing 
+    .search-by-typing {
+        .recent-search {
+            background: #f8faff;
+            padding: 1rem;
+
+            .title {
+                @include font-style(14px, $color-black, 600);
+                margin-bottom: .5rem;
+            }
+            .btn{
+                @include font-style(14px, $color-black, 600);
+                margin-bottom: .5rem;
+                background: $color-white;
+                border: 1px solid #c6c6c6;
+            }
+        }
+
+        .search-list {
+            padding: 0 1rem 1rem 1rem;
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.05);
+
+            li {
+                border-bottom: 1px solid rgba(0,0,0,0.1);
+                padding: .8rem 0;
+                @include font-style(16px, $color-black, 400);
+
+                .text-muted {
+                    color: $text-gray-light !important;
                 }
             }
         }
